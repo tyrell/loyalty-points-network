@@ -1,0 +1,54 @@
+/**
+  This is the data model definition for our loyalty points network. The model is devleoped using the Hyperledger Composer Modeling Language.
+
+  Modeliing Language Reference: https://hyperledger.github.io/composer/reference/cto_language.html
+
+  @author Tyrell Perera 
+ */
+
+namespace co.tyrell.loyalty
+
+asset Card identified by cardNumber {
+  o String cardNumber
+  o Double pointBalance
+  --> Member owner
+}
+
+asset Offer identified by offerId {
+  o String offerId
+  o Double pointsAmount
+  --> Partner partner
+}
+
+participant Member identified by email {
+    o String email
+    o String firstName
+    o String lastName
+    o String dateOfBirth
+}
+
+participant Partner identified by partnerId {
+  o String partnerId
+  o String partnerName
+}
+
+transaction IssuePoints {
+    --> Offer pointsOffer
+    --> Card receivingCard
+}
+
+event IssuePointsEvent {
+    --> Offer pointsOffer
+    --> Card receivingCard
+}
+
+transaction RedeemPoints {
+    --> Offer redemptionOffer
+    --> Card redeemingCard
+}
+
+event RedeemPointsEvent{
+    --> Offer redemptionOffer
+    --> Card redeemingCard
+}
+

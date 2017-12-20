@@ -1,0 +1,52 @@
+/**
+ * Access Control List for the loyalty data
+ */
+rule OfferAllPartner {
+    description: "Allow full access for the participating partner to their offers"
+    participant(i): "co.tyrell.loyalty.Partner"
+    operation: ALL
+    resource(a): "co.tyrell.loyalty.Offer"
+    condition: (a.partner.partnerId === i.partnerId)
+    action: ALLOW
+}
+
+rule CardReadMember {
+    description: "Allow read access for a member to their card details"
+    participant(i): "co.tyrell.loyalty.Member"
+    operation: READ
+    resource(a): "co.tyrell.loyalty.Card"
+    condition: (a.owner.email === i.email)
+    action: ALLOW
+}
+
+rule OfferReadAll {
+    description: "Allow read access to all offers to everyone in the loyalty network"
+    participant: "co.tyrell.loyalty.*"
+    operation: READ
+    resource: "co.tyrell.loyalty.Offer"
+    action: ALLOW
+}
+
+rule SystemACL {
+  description:  "System ACL to permit all access"
+  participant: "org.hyperledger.composer.system.Participant"
+  operation: ALL
+  resource: "org.hyperledger.composer.system.**"
+  action: ALLOW
+}
+
+rule NetworkAdminUser {
+    description: "Grant business network administrators full access to user resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "**"
+    action: ALLOW
+}
+
+rule NetworkAdminSystem {
+    description: "Grant business network administrators full access to system resources"
+    participant: "org.hyperledger.composer.system.NetworkAdmin"
+    operation: ALL
+    resource: "org.hyperledger.composer.system.**"
+    action: ALLOW
+}
