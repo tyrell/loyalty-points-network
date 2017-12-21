@@ -1,6 +1,6 @@
 # Loyalty Network
 
-> The Loyalty Network allows partners and members to transact using points earning offers. Members shop with the Partner businesses and will earn points for their loyalty. Members can then redem these points when Partner businesses off ponts redemption offers. The points are carried and tracked in a membership card. 
+> The Loyalty Network allows partners and members to transact using points earning offers. Members shop with the Partner businesses and will earn points for their loyalty. Members can then redem these points when Partner businesses offer ponts redemption offers. The points are carried and tracked in a membership card. 
 
 This business network defines:
 
