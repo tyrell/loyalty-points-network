@@ -13,6 +13,23 @@ rule OfferAllPartner {
     action: ALLOW
 }
 
+rule CardReadUpdatePartner {
+    description: "Allow read access for the participating partner to member cards"
+    participant: "co.tyrell.loyalty.Partner"
+    operation: READ, UPDATE
+    resource: "co.tyrell.loyalty.Card"
+    action: ALLOW
+}
+
+rule PointIssuePartner {
+    description: "Allow create and read access for the point issue ledger entry for a partner"
+    participant(i): "co.tyrell.loyalty.Partner"
+    operation: CREATE, READ
+    resource(a): "co.tyrell.loyalty.IssuePoints"
+    condition: (a.pointsOffer.partner.partnerId === i.partnerId)
+    action: ALLOW
+}
+
 rule CardReadMember {
     description: "Allow read access for a member to their card details"
     participant(i): "co.tyrell.loyalty.Member"
