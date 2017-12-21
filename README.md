@@ -25,7 +25,7 @@ Create a `Member` participant:
 {
   "$class": "co.tyrell.loyalty.Member",
   "email": "life@mars.com",
-  "firstName": "John",ß
+  "firstName": "John",
   "lastName": "Doe",
   "dateOfBirth": "01-11-1975"
 }

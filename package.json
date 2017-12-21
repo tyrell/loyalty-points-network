@@ -5,8 +5,8 @@
     "name": "loyalty-points-network",
     "version": "0.1",
     "description": "This is a business network for loyalty points.",
-    "networkImage": "https://hyperledger.github.io/composer-sample-networks/packages/bond-network/networkimage.svg",
-    "networkImageanimated": "https://hyperledger.github.io/composer-sample-networks/packages/bond-network/networkimageanimated.svg",
+    "networkImage": "https://raw.githubusercontent.com/tyrell/loyalty-points-network/master/loyaltynetworkimage.svg",
+    "networkImageanimated": "https://raw.githubusercontent.com/tyrell/loyalty-points-network/master/loyaltynetworkimageanimated.svg",
     "scripts": {
         "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/loyalty-network.bna",
         "pretest": "npm run lint",
@@ -20,7 +20,7 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/hyperledger/composer-sample-networks.git"
+        "url": "https://github.com/tyrell/loyalty-points-network.git"
     },
     "keywords": [
         "loyalty points",
