@@ -78,7 +78,7 @@ The `IssuePoints` transaction above will increase the pointBalance of the `Membe
 Congratulations!
 
 
-Running the Business Network
+## Running our Business Network
 
 1. Install a runtime for our business network.
 
@@ -97,7 +97,7 @@ Running the Business Network
   `composer network ping -c admin@loyalty-points-network`
 
 
-If all went well, you will see a new Docker contianer spinning up.
+If all went well, you will see a new Docker container spinning up.
 
 ```
   CONTAINER ID        IMAGE                                                                                                                       COMMAND                  CREATED             STATUS              PORTS                                            NAMES
@@ -109,7 +109,8 @@ If all went well, you will see a new Docker contianer spinning up.
   b1f381ee6934        hyperledger/fabric-orderer:x86_64-1.0.4                                                                                     "orderer"                7 minutes ago       Up 8 minutes        0.0.0.0:7050->7050/tcp                           orderer.example.com
 ```
 
-Generating the REST server
+
+### Generating the REST server
 
 ```
   Tyrells-MacBook-Air:loyalty-points-network tyrell$ composer-rest-server
