@@ -34,7 +34,6 @@
     "devDependencies": {
         "chai": "^3.5.0",
         "composer-admin": "^0.16.0",
-        "composer-cli": "^0.16.0",
         "composer-client": "^0.16.0",
         "composer-common": "^0.16.0",
         "composer-connector-embedded": "^0.16.0",
@@ -67,5 +66,6 @@
         "blocking": true,
         "logInfo": false,
         "logError": true
-    }
+    },
+    "dependencies": {}
 }
