@@ -152,7 +152,7 @@ describe('Issue Points', () => {
                 return cardegistry.get(card.cardNumber);
             })
             .then((updatedCardAsset) => {
-                updatedCardAsset.pointBalance.should.equal(offer.pointsAmount);
+                updatedCardAsset.pointBalance.should.equal(card.pointBalance + offer.pointsAmount);
             });
         });
     });

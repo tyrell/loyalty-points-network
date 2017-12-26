@@ -8,7 +8,7 @@
     "networkImage": "https://raw.githubusercontent.com/tyrell/loyalty-points-network/master/loyaltynetworkimage.svg",
     "networkImageanimated": "https://raw.githubusercontent.com/tyrell/loyalty-points-network/master/loyaltynetworkimageanimated.svg",
     "scripts": {
-        "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/loyalty-network.bna",
+        "prepublish": "mkdirp ./dist && composer archive create  --sourceType dir --sourceName . -a ./dist/loyalty-points-network.bna",
         "pretest": "npm run lint",
         "lint": "eslint .",
         "postlint": "npm run licchk",

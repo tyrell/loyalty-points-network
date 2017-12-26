@@ -86,7 +86,7 @@ Congratulations!
 
 2. Deploy our network archive file (.bna) and start the business network.
 
-  `composer network start -c PeerAdmin@hlfv1 -A admin -S adminpw -a ./dist/loyalty-network.bna -f networkadmin.card`
+  `composer network start -c PeerAdmin@hlfv1 -A admin -S adminpw -a ./dist/loyalty-points-network.bna -f networkadmin.card`
 
 3. Import the business network card generated above into the composer.
 
