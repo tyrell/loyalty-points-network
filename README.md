@@ -1,6 +1,10 @@
 # Loyalty Points Network
 
-> The Loyalty Points Network allows partners and members to transact using points earning offers. Members shop with the Partner businesses and will earn points for their loyalty. Members can then redem these points when Partner businesses offer ponts redemption offers. The points are carried and tracked in a membership card. 
+The example code in this repository supplements my blog post **10 years on, #Blockchain is ready for Business use... thanks to the #Hyperledger project!** found at http://www.tyrell.co/2018/01/10-years-on-blockchain-is-ready-for-business.html.
+
+---
+
+The Loyalty Points Network allows partners and members to transact using points earning offers. Members shop with the Partner businesses and will earn points for their loyalty. Members can then redem these points when Partner businesses offer ponts redemption offers. The points are carried and tracked in a membership card. 
 
 This business network defines:
 
