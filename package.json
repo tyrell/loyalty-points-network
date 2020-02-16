@@ -37,7 +37,7 @@
         "composer-client": "^0.16.0",
         "composer-common": "^0.16.0",
         "composer-connector-embedded": "^0.16.0",
-        "eslint": "^3.19.0",
+        "eslint": ">=4.18.2",
         "eslint-config-airbnb": "^16.1.0",
         "eslint-config-google": "^0.9.1",
         "eslint-config-standard": "^11.0.0-beta.0",
